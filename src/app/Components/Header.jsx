@@ -6,10 +6,10 @@ import Link from 'next/link'
 
 export const Header = () => {
   return (
-    <div className='py-5 px-5 md:px-12 lg:px-28'>
-        <div className='flex justify-between items-center'>
+    <div className='py-5 px-5 md:px-12 lg:px-28 '>
+        <div className='flex justify-between items-center bg-gray-200'>
           <Link href='/' >
-          <Image src={assets.logo} width={180} alt='' className='w-[130px] sm:w-auto' />
+          <Image src={assets.logo} width={180} alt='' className='w-[100px] sm:w-auto' />
           </Link>
           <button className='flex items-center gap-2 font-medium py-1 px-3 sm:py-3 sm:px-6 border border-solid border-black shadow-[-7px_7px_0px_0px] '>
             Get Started
