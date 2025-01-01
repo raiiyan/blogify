@@ -17,8 +17,8 @@ const BlogTableItem = ({ authorImg, title, author, date, deleteBlog, mongoId }) 
         <td className='px-6 py-4'>
             {BlogDate.toDateString()} {/* The date is already formatted in toDateString() */}
         </td>
-        <td onClick={()=>deleteBlog(mongoId)} className='px-6 py-4 cursor-pointer text-red-500 hover:underline'>
-            Delete
+        <td onClick={()=>deleteBlog(mongoId)} className='px-6 py-4 cursor-pointer text-red-500 italic hover:underline'>
+            Evanesco Deletio!
         </td>
     </tr>
   );
