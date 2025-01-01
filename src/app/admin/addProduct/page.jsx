@@ -41,7 +41,7 @@ const AddBlog = () => {
           description: "",
           category: "select",
           author: "Alex Bennett",
-          authorImg: "/author_img.png",
+          authorImg: "/authorImg.png",
         });
         setImage(false);
       } 

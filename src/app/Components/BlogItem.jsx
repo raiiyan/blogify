@@ -7,7 +7,7 @@ export const BlogItem = ({title, description, image, category, id}) => {
   return (
     <div className='max-w-[330px] bg-white border bortder-black hover:shadow-[-7px_7px_0px_0px]'>
         <Link href={`/blogs/${id}`}>
-            <Image src={image} alt='' width={400} height={400} className='border border-black'/>
+            <Image src={image} alt='image' width={400} height={400} className='border border-black'/>
         </Link>
         <p className='ml-5 mt-5 inline-block bg-black text-white text-sm'>{category}</p>
         <div className='p-5'>
