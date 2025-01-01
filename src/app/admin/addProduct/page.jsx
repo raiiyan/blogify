@@ -13,7 +13,7 @@ const AddBlog = () => {
     description: "",
     category: "select",
     author: "Alex Bennett",
-    authorImg: "/author_img.png",
+    authorImg: "/authorImg.png",
   });
 
   const onChangeHandler = (event) => {
@@ -114,7 +114,7 @@ const AddBlog = () => {
         <option value="Technology">Technology</option>
         <option value="Lifestyle">Lifestyle</option>
       </select>
-
+      <br />
       <button type="submit" className="mt-8 w-40 h-12 bg-black text-white rounded">
         Add Blog
       </button>
