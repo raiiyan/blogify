@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-const BlogTableItem = ({ authorImg, title, author, date }) => {
+const BlogTableItem = ({ authorImg, title, author, date, deleteBlog, mongoId }) => {
 
     const BlogDate = new Date(date);
 
@@ -17,8 +17,8 @@ const BlogTableItem = ({ authorImg, title, author, date }) => {
         <td className='px-6 py-4'>
             {BlogDate.toDateString()} {/* The date is already formatted in toDateString() */}
         </td>
-        <td className='px-6 py-4 cursor-pointer'>
-            x
+        <td onClick={()=>deleteBlog(mongoId)} className='px-6 py-4 cursor-pointer text-red-500 hover:underline'>
+            Delete
         </td>
     </tr>
   );
