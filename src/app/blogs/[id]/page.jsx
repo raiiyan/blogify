@@ -20,7 +20,7 @@ const page = ({params}) => {
   }
 
   useEffect(() => {
-    fetchBlogData()
+    fetchBlogData();
   }, [])
 
   return (data?<>
@@ -43,8 +43,12 @@ const page = ({params}) => {
     <div className='mx-5 max-w-[800px] md:mx-auto mt-[-40px] mb-10'> 
       <Image className='border-4 border-white' src={data.image} alt='' width={1280} height={720} />
 
-      <h1 className='my-8 text-[26px] font-semibold'>Introduction:</h1>
-      <p>{data.description}</p>
+      <div className='blog-content' dangerouslySetInnerHTML={{
+        __html: data.description
+      }}>
+
+      </div>
+
 
       <div className='flex flex-col items-center justify-center my-24'>
         <p className='text-black font font-semibold'>Share this article:</p>

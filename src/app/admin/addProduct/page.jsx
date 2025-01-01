@@ -18,7 +18,8 @@ const AddBlog = () => {
 
   const onChangeHandler = (event) => {
     const { name, value } = event.target;
-    setData((prev) => ({ ...prev, [name]: value }));
+    setData((data) => ({ ...data, [name]: value }));
+    console.log(data);
   };
 
   const onSubmitHandler = async (e) => {
