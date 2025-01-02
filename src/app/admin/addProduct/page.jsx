@@ -13,7 +13,7 @@ const AddBlog = () => {
     description: "",
     category: "select",
     author: "Alex Bennett",
-    authorImg: "/authorImg.png",
+    authorImg: "/author_img.png",
   });
 
   const onChangeHandler = (event) => {
@@ -42,7 +42,7 @@ const AddBlog = () => {
           description: "",
           category: "select",
           author: "Alex Bennett",
-          authorImg: "/authorImg.png",
+          authorImg: "/author_img.png",
         });
         setImage(false);
       } 
@@ -60,6 +60,8 @@ const AddBlog = () => {
   };
 
   return (
+    <>
+
     <form onSubmit={onSubmitHandler} className="pt-5 px-5 sm:pt-12 sm:pl-16">
       <p className="text-xl">Upload Thumbnail</p>
       <label htmlFor="image">
@@ -119,6 +121,7 @@ const AddBlog = () => {
         Add Blog
       </button>
     </form>
+    </>
   );
 };
 
