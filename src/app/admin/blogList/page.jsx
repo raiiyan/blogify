@@ -51,7 +51,7 @@ const page = () => {
                 title={item.title}
                 author={item.author}
                 authorImg={item.authorImg}
-                data={item.date}
+                date={item.date}
                 deleteBlog={deleteBlog}
               />
             })}
