@@ -86,9 +86,9 @@ export const Header = () => {
           </span>,{" "} or{" "}
           <span className="font-semibold text-gray-800">
             Startup
-          </span>{" "}
+          </span>{" "}  <br />
            our curated content will keep
-          you informed, inspired, and engaged. Start your journey with us today.
+          you informed, inspired, and engaged. <br /> Start your journey with us today.
         </p>
 
         {/* Subscription Form */}
