@@ -14,7 +14,7 @@ export default function Layout({ children }) {
 
         <SideBar />
         <div className="flex flex-col w-full">
-          <div className="flex items-center justify-between w-full py-3 max-h-[70px] px-12 border-b border-black">
+        <div className="flex items-center justify-between w-full py-6 max-h-[72px] px-6 sm:px-12 border-b border-gray-300 bg-white shadow-sm rounded-t-lg">
             <h3 className="font-medium">Admin Panel</h3>
             <Image src={assets.profile_icon} width={40} alt="" />
           </div>

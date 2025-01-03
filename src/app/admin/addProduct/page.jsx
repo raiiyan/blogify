@@ -64,7 +64,7 @@ const AddBlog = () => {
 
     <form onSubmit={onSubmitHandler} className="pt-5 px-5 sm:pt-12 sm:pl-16">
       <p className="text-xl">Upload Thumbnail</p>
-      <label htmlFor="image">
+      <label htmlFor="image" className="block cursor-pointer w-[160px] h-[70]">
         <Image
           className="mt-4 rounded"
           src={!image ? assets.upload_area : URL.createObjectURL(image)}
