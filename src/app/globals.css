@@ -41,3 +41,11 @@
     font-weight: 600;
     font-size: 18px;
 }
+
+/* Hide only on tablet-sized screens (between 768px and 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .hide-on-tablet {
+      display: none;
+    }
+  }
+  

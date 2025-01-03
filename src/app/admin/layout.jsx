@@ -10,7 +10,7 @@ export default function Layout({ children }) {
     <>
       <div className="flex">
 
-        <ToastContainer theme="dark" />
+        <ToastContainer theme="light" />
 
         <SideBar />
         <div className="flex flex-col w-full">
