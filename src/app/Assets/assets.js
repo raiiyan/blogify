@@ -13,6 +13,8 @@ import upload_area from './upload_area.png'
 import arrow_white from './arrow_white.png'
 import google_icon from './google-icon.png'
 import fb_icon from './fb-icon.png'
+import aboutImage from './about-image.jpeg'
+import mission_image from './mission-image.jpg'
 
 
 export const assets = {
@@ -29,7 +31,9 @@ export const assets = {
     upload_area,
     arrow_white,
     google_icon,
-    fb_icon
+    fb_icon,
+    aboutImage,
+    mission_image,
     }
 
     
