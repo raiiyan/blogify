@@ -59,15 +59,15 @@ export const Header = () => {
           >
             About
           </Link>
-          <button className="flex items-center gap-2 font-medium py-2 px-5 sm:py-2 sm:px-5 bg-black text-white  rounded-lg transition-transform transform hover:scale-105 shadow-md hover:shadow-xl">
+          <Link href="/loginSignup" className="flex items-center gap-2 font-medium py-2 px-5 sm:py-2 sm:px-5 bg-black text-white  rounded-lg transition-transform transform hover:scale-105 shadow-md hover:shadow-xl">
             Get Started
             <Image src={assets.arrow_white} width={20} alt="Arrow" />
-          </button>
+          </Link>
         </div>
       </div>
 
       {/* Hero Section */}
-      <div className="text-center my-8">
+      <div className="text-center my-6">
         <h1 className="text-3xl sm:text-5xl font-semibold text-gray-800 leading-tight tracking-wide bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">
           Discover the Latest Insights & Stories
         </h1>

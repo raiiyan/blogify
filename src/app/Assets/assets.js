@@ -11,6 +11,9 @@ import add_icon from './add_icon.png'
 import email_icon from './email_icon.png'
 import upload_area from './upload_area.png'
 import arrow_white from './arrow_white.png'
+import google_icon from './google-icon.png'
+import fb_icon from './fb-icon.png'
+
 
 export const assets = {
     facebook_icon,
@@ -24,7 +27,9 @@ export const assets = {
     add_icon,
     email_icon,
     upload_area,
-    arrow_white
+    arrow_white,
+    google_icon,
+    fb_icon
     }
 
     
