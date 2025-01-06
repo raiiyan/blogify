@@ -59,7 +59,10 @@ export const Header = () => {
           >
             About
           </Link>
-          <Link href="/loginSignup" className="flex items-center gap-2 font-medium py-2 px-5 sm:py-2 sm:px-5 bg-black text-white  rounded-lg transition-transform transform hover:scale-105 shadow-md hover:shadow-xl">
+          <Link
+            href="/loginSignup"
+            className="flex items-center gap-2 font-medium py-2 px-5 sm:py-2 sm:px-5 bg-black text-white  rounded-lg transition-transform transform hover:scale-105 shadow-md hover:shadow-xl"
+          >
             Get Started
             <Image src={assets.arrow_white} width={20} alt="Arrow" />
           </Link>
@@ -68,7 +71,7 @@ export const Header = () => {
 
       {/* Hero Section */}
       <div className="text-center my-6">
-        <h1 className="text-3xl sm:text-5xl font-semibold text-gray-800 leading-tight tracking-wide bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">
+        <h1 className="p-2 text-3xl sm:text-5xl font-semibold text-gray-800 leading-tight tracking-wide bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">
           Discover the Latest Insights & Stories
         </h1>
         <p className="mt-5 max-w-[740px] mx-auto text-xs sm:text-base text-gray-600 leading-relaxed tracking-wide">
@@ -78,17 +81,11 @@ export const Header = () => {
           </span>
           , expert opinions, and in-depth explorations of the world around us.
           Whether you're seeking fresh perspectives on {""}
-          <span className="font-semibold text-gray-800">
-            Technology
-          </span>,{" "}
-          <span className="font-semibold text-gray-800">
-            Lifestyle
-          </span>,{" "} or{" "}
-          <span className="font-semibold text-gray-800">
-            Startup
-          </span>{" "}  <br />
-           our curated content will keep
-          you informed, inspired, and engaged. <br /> Start your journey with us today.
+          <span className="font-semibold text-gray-800">Technology</span>,{" "}
+          <span className="font-semibold text-gray-800">Lifestyle</span>, or{" "}
+          <span className="font-semibold text-gray-800">Startup</span> <br />
+          our curated content will keep you informed, inspired, and engaged.{" "}
+          <br /> Start your journey with us today.
         </p>
 
         {/* Subscription Form */}

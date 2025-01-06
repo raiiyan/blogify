@@ -10,14 +10,13 @@ export default function LoginPage() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50 px-4 sm:px-8">
       <div className="bg-white p-6 sm:p-8 rounded-lg shadow-lg w-full max-w-lg">
-        {/* Header */}
+        //* Header Text
         <h1 className="text-2xl sm:text-3xl font-semibold text-center mb-4 text-gray-800">
           {isLogin ? "Welcome Back!" : "Create Your Account"}
         </h1>
         <p className="text-center text-sm sm:text-base text-gray-500 mb-6">
           {isLogin ? "Login to access your account" : "Sign up to get started"}
         </p>
-
         {/* Social Login Buttons */}
         <button className="w-full bg-gray-100 text-gray-700 py-2 px-4 rounded-lg flex items-center justify-center gap-2 mb-4 hover:bg-gray-200 transition">
           <Image
@@ -37,14 +36,12 @@ export default function LoginPage() {
           />
           {isLogin ? "Login with Facebook" : "Sign up with Facebook"}
         </button>
-
         {/* Divider */}
         <div className="relative flex items-center mb-6">
           <div className="flex-grow border-t border-gray-300"></div>
           <span className="px-3 text-sm text-gray-500">or</span>
           <div className="flex-grow border-t border-gray-300"></div>
         </div>
-
         {/* Form */}
         <form className="space-y-4">
           {/* Email Input */}
@@ -99,7 +96,6 @@ export default function LoginPage() {
             {isLogin ? "Login" : "Sign Up"}
           </button>
         </form>
-
         {/* Footer */}
         <p className="text-center text-sm sm:text-base text-gray-500 mt-4">
           {isLogin ? (
