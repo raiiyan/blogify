@@ -10,7 +10,7 @@ export default function LoginPage() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50 px-4 sm:px-8">
       <div className="bg-white p-6 sm:p-8 rounded-lg shadow-lg w-full max-w-lg">
-        //* Header Text
+        {/* Logo */}
         <h1 className="text-2xl sm:text-3xl font-semibold text-center mb-4 text-gray-800">
           {isLogin ? "Welcome Back!" : "Create Your Account"}
         </h1>
