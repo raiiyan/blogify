@@ -6,6 +6,8 @@ import axios from "axios";
 import { toast } from "react-toastify";
 
 export const Header = () => {
+  const [sidePanelOpen, setSidePanelOpen] = useState(false);
+
   const [email, setEmail] = useState("");
 
   const onSubmitHandler = async (e) => {
@@ -45,8 +47,31 @@ export const Header = () => {
           />
         </Link>
 
-        {/* Navbar Links */}
-        <div className="flex items-center gap-6 ml-auto">
+        {/* Hamburger Menu for Mobile */}
+        <div className="sm:hidden">
+          <button
+            onClick={() => setSidePanelOpen(true)}
+            className="text-gray-800 focus:outline-none"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+
+        {/* Navbar Links (Hidden on Mobile) */}
+        <div className="hidden sm:flex items-center gap-6 ml-auto">
           <Link
             href="/"
             className="text-sm font-semibold sm:text-base text-gray-800 hover:text-gray-500 transition-colors duration-200"
@@ -61,11 +86,71 @@ export const Header = () => {
           </Link>
           <Link
             href="/loginSignup"
-            className="flex items-center gap-2 font-medium py-2 px-5 sm:py-2 sm:px-5 bg-black text-white  rounded-lg transition-transform transform hover:scale-105 shadow-md hover:shadow-xl"
+            className="flex items-center gap-2 font-medium py-2 px-5 sm:py-2 sm:px-5 bg-black text-white rounded-lg transition-transform transform hover:scale-105 shadow-md hover:shadow-xl"
           >
             Get Started
             <Image src={assets.arrow_white} width={20} alt="Arrow" />
           </Link>
+        </div>
+
+        {/* Side Panel (Drawer) */}
+        <div
+          className={`fixed inset-0 z-50 transition-opacity duration-300 ${
+            sidePanelOpen
+              ? "bg-black bg-opacity-50 opacity-100"
+              : "opacity-0 pointer-events-none"
+          }`}
+          onClick={() => setSidePanelOpen(false)}
+        >
+          <div
+            className={`fixed top-0 right-0 w-64 bg-white h-full shadow-lg p-6 z-50 transform transition-transform duration-300 ${
+              sidePanelOpen ? "translate-x-0" : "translate-x-full"
+            }`}
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Close Button */}
+            <button
+              onClick={() => setSidePanelOpen(false)}
+              className="text-gray-800 focus:outline-none absolute top-4 right-4"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+
+            {/* Links */}
+            <div className="mt-8 space-y-6">
+              <Link
+                href="/"
+                className="text-lg font-semibold text-gray-800 hover:text-gray-500 transition-colors duration-200 block"
+              >
+                Home
+              </Link>
+              <Link
+                href="/about"
+                className="text-lg font-semibold text-gray-800 hover:text-gray-500 transition-colors duration-200 block"
+              >
+                About
+              </Link>
+              <Link
+                href="/loginSignup"
+                className="block font-medium py-2 px-5 bg-black text-white rounded-lg transition-transform transform hover:scale-105 shadow-md hover:shadow-xl text-center"
+              >
+                Get Started
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
 

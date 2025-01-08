@@ -1,5 +1,5 @@
 import { ConnectDB } from "../../../../lib/config/db";
-import EmailModel from '../../../../lib/models/EnailModel';
+import EmailModel from '../../../../lib/models/EmailModel';
 import { NextResponse } from 'next/server';
 
 
